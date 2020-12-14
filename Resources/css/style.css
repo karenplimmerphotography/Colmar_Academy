@@ -1,0 +1,41 @@
+/* link to project
+/Users/karenplimmer/Documents/Projects/Colmar_Academy
+*/
+
+/* Reset default browser */
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+/* Universal Styles */
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: rgb (200, 200, 200);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size : 1.5rem;
+}
+/*header*/
+
+/*Learn something new everday*/
+
+/*It doesn't hurt to keep practicing*/
+
+/*Start learning*/
+
+/*Thesis exhibit*/
+
+/*footer*/
