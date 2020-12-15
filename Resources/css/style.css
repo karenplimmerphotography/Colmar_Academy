@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    border: 1px  solid red;
 }
 
 html {
@@ -23,7 +23,6 @@ body {
 
 h1, h2, h3 {
     color: rgb(75, 75, 75);
-
 }
 
 h1 {
@@ -71,10 +70,13 @@ header {
     display: inline;
     font-size: 1.5rem;
     vertical-align: top;
+    color:rgb(150, 150, 150);
+    letter-spacing: 0.15em;
 }
 
  .colmar {
     font-weight: bold;
+    color:rgb(50, 50, 50)
 }
 
 nav li {
@@ -111,16 +113,17 @@ nav {
 
 /*Learn something new everday*/
 
-.flex-container {
+.flex-container-ccw {
     display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     background-color: rgb(210, 210, 210);
+    padding: 0;
 }
 
-.learn-flex-item h1, p {
-    padding:40px 0;
+.learn-flex-item h1, h3, div {
+    padding:20px 0;
 }
 
 .learn-flex-item a {
@@ -140,11 +143,88 @@ nav {
 }
 .learn-flex-item {
     max-width: 432px;
+    padding: 0 50px;
 }
 
-
-
+@media only screen and (max-width: 800px) {
+    .study-flex-item {
+        padding: 0px;
+    }
+    .learn-flex-item {
+        padding: 32px 50px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .learn-flex-item {
+        padding: 32px 50px;
+    }
+}
 /*It doesn't hurt to keep practicing*/
+
+.flex-container-csw {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 32px;
+}
+
+.flex-container-info {
+    padding: 0;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 250px;
+}
+
+.flex-container-info  {
+    width: 450px;
+}
+
+.flex-container-info p {
+    padding: 8px 0 8px 0;
+}
+
+.flex-container-info h3 {
+    padding: 0;
+}
+.practicing {
+    max-width: 1200px;
+    padding: 0;
+    transform:translate(30px, 0);
+}
+
+.practicing img, p {
+    max-width: 720px;
+    margin-right: 24px;
+}
+
+.practicing h2 {
+    padding: 32px 0 24px 0;
+}
+
+.practicing span {
+    display: block;
+    margin: 32px 0;
+}
+
+.orientation {
+    padding: 0 0 0 16px;
+}
+
+.orientation h3 {
+    padding-top: 24px;
+}
+
+.beret {
+    background-color:rgb(210, 210, 210)
+}
+
+.small-img {
+    height: 200px;
+    padding: 16px;
+}
+
 
 /*Start learning*/
 
