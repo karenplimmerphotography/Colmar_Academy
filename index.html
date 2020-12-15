@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colmar Academy</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link href="./Resources/css/style.css" rel="stylesheet">
 </head>
 
@@ -12,7 +14,10 @@
 -->
 
 <body>
-    <header>
+
+    <!--Header Desktop-->
+
+    <header class="hide-on-mobile">
         <div class="logo">
             <img  src="Resources/Images/ic-logo.svg" alt="logo">
             <h2 class="name" ><span class="colmar">Colmar</span> Academy</h2>
@@ -25,6 +30,15 @@
             <li><a href="#">Sign in</a></li>
         </nav>
     </header>
+
+    <!--Header Mobile-->
+
+    <nav class="hide-on-desktop">
+        <img src="Resources/Images/ic-logo.svg" alt="logo" class="icon">
+        <img src="Resources/Images/ic-on-campus.svg" alt="on campus icon" class="icon">
+        <img src="Resources/Images/ic-online.svg" alt="online icon"class="icon">
+        <img src="Resources/Images/ic-login.svg" alt="log-in icon" class="icon">
+    </nav>
 
     <!--Learn something new everday-->
 
