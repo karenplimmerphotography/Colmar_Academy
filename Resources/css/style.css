@@ -142,8 +142,41 @@ nav {
     max-width: 720px;
 }
 .learn-flex-item {
-    max-width: 432px;
+    max-width: 400px;
     padding: 0 50px;
+}
+
+.practicing img, p {
+    max-width: 720px;
+    margin-right: 24px;
+}
+
+.practicing h2 {
+    padding: 32px 0 24px 0;
+}
+
+.practicing span {
+    display: block;
+    margin: 32px 0;
+   font-style : italic;
+}
+
+.orientation {
+    padding: 0 16px 0 0;
+    transform: translate(0px, 0);
+}
+
+.orientation h3 {
+    padding-top: 24px;
+}
+
+.beret {
+    background-color:rgb(210, 210, 210)
+}
+
+.small-img {
+    height: 200px;
+    padding: 16px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -174,11 +207,10 @@ nav {
     display: flex; 
     justify-content: flex-start;
     align-items: flex-start;
-    width: 250px;
 }
 
 .flex-container-info  {
-    width: 450px;
+    width: 400px;
 }
 
 .flex-container-info p {
@@ -188,42 +220,65 @@ nav {
 .flex-container-info h3 {
     padding: 0;
 }
+
 .practicing {
-    max-width: 1200px;
     padding: 0;
-    transform:translate(30px, 0);
+    transform: translate(0px, 0);
 }
 
-.practicing img, p {
-    max-width: 720px;
-    margin-right: 24px;
+@media only screen and (max-width: 800px) {
+    .practicing {
+        display: none
+    }
+    .orientation {
+        padding:0;
+    }
+    .flex-container-info  {
+        width: 460px;
+    }
+    .flex-container-csw {
+        padding-top: 0;
+        justify-content: flex-start;
+    }
+     .flex-container-info {
+    flex:wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    }
+    .mobile-img {
+    padding: 16px 16px 16px 16px;
+    max-width: 460px;
+    }
+
+    .mobile-indent {
+        padding-left: 16px;
+    }
+
+    .beret {
+        background-color: white;
+        padding-top :48px;
+    }
+
+    .students { 
+        padding-top: 48px;
+    }
+
 }
 
-.practicing h2 {
-    padding: 32px 0 24px 0;
+@media only screen and (max-width: 800px) {
+    .small-img {
+        display: none;
+    }
 }
 
-.practicing span {
-    display: block;
-    margin: 32px 0;
+@media only screen and (min-width: 800px) {
+    .mobile-img {
+        display: none;
+    }
 }
 
-.orientation {
-    padding: 0 0 0 16px;
-}
 
-.orientation h3 {
-    padding-top: 24px;
-}
-
-.beret {
-    background-color:rgb(210, 210, 210)
-}
-
-.small-img {
-    height: 200px;
-    padding: 16px;
-}
 
 
 /*Start learning*/
