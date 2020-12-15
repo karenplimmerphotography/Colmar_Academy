@@ -16,7 +16,7 @@ html {
 
 /* Universal Styles */
 body {
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     color: rgb(100, 100, 100);
 }
@@ -58,12 +58,13 @@ header {
 
 .logo img {
     height: 2.5rem;
-    vertical-align:text-bottom;
+    vertical-align: text-bottom;
 }
 
  .name  {
     text-transform: uppercase;
     display: inline;
+    font-size: 32px;
 }
 
  .colmar {
@@ -77,7 +78,33 @@ nav li {
     padding-left: 16px;
 }
 
+@media only screen and (max-width: 800px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
 
+
+
+@media only screen and (min-width: 800px) {
+    .hide-on-desktop {
+        display: none;
+    }
+}
+
+/*Header Mobile*/
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    height: 64px;
+}
+
+.icon {
+    height: 2rem;
+}
 
 
 /*Learn something new everday*/
