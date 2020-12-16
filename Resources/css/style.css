@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px  solid red;
+    border: 1px  none red;
 }
 
 html {
@@ -321,23 +321,23 @@ p .small-container {
     display: flex;
     justify-content: center;
     align-content: flex-start;
-    flex-wrap:wrap;
-    background-color:rgb(240, 240, 240);
+    flex-wrap: wrap;
     max-width: 1500px;
     padding: 0;
-    transform:translate(0px, 0);
+    transform: translate(15px, 0);
 }
 
 .small-container {
-    max-width: 391px;
+    max-width: 372px;
     padding: 0;
-
+    background-color: white;
+    margin: 0 32px 32px 0;
 }
 
 .small-container img {
     display: block;
-    height: 200px;
-    width: 391px;
+    height: 190px;
+    width: 372px;
 }
 
 .text-indent {
@@ -361,18 +361,19 @@ p .small-container {
 
 .start-learning-mobile {
     padding-top: 64px;
+    text-align: center;
 }
 
 .courses {
     padding: 0;
+    margin: 0 32px;
 }
 
 .shaded {
    max-width: 460px;
    margin-bottom: 8px;
-   background-color :rgb(200, 200, 200);
+   background-color :rgb(240, 240, 240);
    padding: 16px 0 24px 16px;
-   margin: 0 32px;
 }
 
 /*Start Learning Media Queries*/
