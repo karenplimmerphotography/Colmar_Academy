@@ -1,0 +1,139 @@
+/* link to project
+/Users/karenplimmer/Documents/Projects/Colmar_Academy
+
+fonts in use
+font-family: "Belleza", sans-serif;
+font-family: "Lora", serif;
+font-family: 'Montserrat', sans-serif;
+
+
+*/
+
+/* Reset default browser */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px  none red;
+}
+
+html {
+    font-size: 14px;
+}
+
+/* Universal Styles */
+body {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(125, 125, 125);
+}
+
+h1, h2, h3, h4 {
+    font-family: "Belleza", "Lora", sans-serif;
+
+}
+
+h1, h2, h3 {
+    color: rgb(75, 75, 75);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size : 1.5rem;
+}
+
+h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: rgb(150, 150, 150)
+}
+
+p {
+    line-spacing: 1.3;
+}
+
+a {
+    color: rgb(100, 100, 100);
+    text-decoration: none;     
+}
+
+a:hover {
+    color: navy;
+}
+
+a:visited {
+    color: forestgreen;
+}
+
+/*header*/
+
+header {
+    height: 64px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 32px;
+    vertical-align: sub;
+}
+
+ .name  {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 1.5rem;
+    vertical-align: top;
+    color:rgb(150, 150, 150);
+    letter-spacing: 0.15em;
+}
+
+ .colmar {
+    font-weight: bold;
+    color:rgb(50, 50, 50)
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    padding-left: 16px;
+}
+
+/*Header Media Queries*/
+
+@media only screen and (max-width: 800px) {
+    .desktop-menu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+/*Header Mobile*/
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    height: 64px;
+}
+
+.icon {
+    height: 2rem;
+}
+
+/*Learn something new everyday*/
