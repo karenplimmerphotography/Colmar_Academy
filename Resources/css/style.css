@@ -154,8 +154,8 @@ nav {
     max-width: 720px;
 }
 .learn-flex-item {
-    max-width: 432px;
-    padding-left: 16px;
+    padding-left: 40px;
+    padding-right:175px
 }
 
 /*Learn something new everyday Media queries*/
@@ -191,7 +191,6 @@ nav {
     width: 500px;
 }
 
-
 .flex-container-info p {
     padding: 8px 0 8px 0;
 }
@@ -202,7 +201,6 @@ nav {
 
 .practicing {
     padding: 32px 0 0 24px;
-    transform: translate(40px, 0);
 }
 
 .practicing img, p {
@@ -222,7 +220,6 @@ nav {
 
 .orientation {
     padding: 16px 16px 0 0;
-    transform: translate(40px, 0);
 }
 
 .small-img {
@@ -251,7 +248,7 @@ nav {
     }
 
      .flex-container-info {
-    flex:wrap;
+    flex-wrap:wrap;
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -307,7 +304,7 @@ p .small-container {
     text-align: center;
     padding: 32px, 0;
     background-color: rgb(240, 240, 240);
-    transform: translate(60px, 0);
+    transform: translate(0px, 0);
 }
 
 .outer-flex-container-cs {
@@ -315,8 +312,8 @@ p .small-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 0;
-    transform: translate(60px, 0);
+    padding: 0 65px 0 72px;
+   
 }
 
 .flex-container-six-csw {
@@ -329,7 +326,7 @@ p .small-container {
 }
 
 .small-container {
-    max-width: 398px;
+    max-width: 385px;
     padding: 0;
     background-color: white;
     margin: 0 32px 32px 0;
@@ -337,8 +334,8 @@ p .small-container {
 
 .small-container img {
     display: block;
-    height: 203px;
-    width: 397px;
+    height: 193px;
+    width: 385px;
 }
 
 .text-indent {
@@ -408,7 +405,6 @@ p .small-container {
     align-content: flex-start;
     flex-wrap: wrap;
     padding: 0 0 32px 24px;
-    transform: translate(35px, 0);
 }
 
 video {
@@ -421,6 +417,7 @@ video {
 
  .video-container  p {
     padding-top: 8px;
+    padding-bottom: 32px;
 }
 
 .flex-container-fisma-sc { 
