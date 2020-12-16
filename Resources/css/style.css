@@ -131,7 +131,7 @@ nav {
 }
 
 .learn-flex-item h1, h3, div {
-    padding:20px 0;
+    padding: 20px 0;
 }
 
 .learn-flex-item a {
@@ -150,8 +150,8 @@ nav {
     max-width: 720px;
 }
 .learn-flex-item {
-    max-width: 400px;
-    padding: 0 50px;
+    max-width: 432px;
+    padding: 0;
 }
 
 /*Learn something new everyday Media queries*/
@@ -176,6 +176,7 @@ nav {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    padding: 0;
 }
 
 .flex-container-info {
@@ -186,7 +187,7 @@ nav {
 }
 
 .flex-container-info  {
-    width: 400px;
+    width: 415px;
 }
 
 .flex-container-info p {
@@ -198,8 +199,8 @@ nav {
 }
 
 .practicing {
-    padding: 32px 0 0 0;
-    transform: translate(22px, 0);
+    padding: 32px 0 0 24px;
+    transform: translate(10px, 0);
 }
 
 .practicing img, p {
@@ -219,7 +220,7 @@ nav {
 
 .orientation {
     padding: 16px 16px 0 0;
-    transform: translate(22px, 0);
+    transform: translate(10px, 0);
 }
 
 .orientation h3 {
