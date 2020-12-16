@@ -37,6 +37,12 @@ h3 {
     font-size : 1.5rem;
 }
 
+h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: rgb(150, 150, 150)
+}
+
 a {
     color: rgb(100, 100, 100);
     text-decoration: none;     
@@ -85,6 +91,8 @@ nav li {
     padding-left: 16px;
 }
 
+/*Header Media Queries*/
+
 @media only screen and (max-width: 800px) {
     .desktop-menu {
         display: none;
@@ -111,14 +119,14 @@ nav {
     height: 2rem;
 }
 
-/*Learn something new everday*/
+/*Learn something new everyday*/
 
 .flex-container-ccw {
     display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgb(210, 210, 210);
+    background-color: rgb(230, 230, 230);
     padding: 0;
 }
 
@@ -146,38 +154,7 @@ nav {
     padding: 0 50px;
 }
 
-.practicing img, p {
-    max-width: 720px;
-    margin-right: 24px;
-}
-
-.practicing h2 {
-    padding: 32px 0 24px 0;
-}
-
-.practicing span {
-    display: block;
-    margin: 32px 0;
-   font-style : italic;
-}
-
-.orientation {
-    padding: 0 16px 0 0;
-    transform: translate(0px, 0);
-}
-
-.orientation h3 {
-    padding-top: 24px;
-}
-
-.beret {
-    background-color:rgb(210, 210, 210)
-}
-
-.small-img {
-    height: 200px;
-    padding: 16px;
-}
+/*Learn something new everyday Media queries*/
 
 @media only screen and (max-width: 800px) {
     .study-flex-item {
@@ -199,7 +176,6 @@ nav {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding-top: 32px;
 }
 
 .flex-container-info {
@@ -222,30 +198,69 @@ nav {
 }
 
 .practicing {
-    padding: 0;
-    transform: translate(0px, 0);
+    padding: 32px 0 0 0;
+    transform: translate(22px, 0);
 }
+
+.practicing img, p {
+    max-width: 720px;
+    margin-right: 24px;
+}
+
+.practicing h2 {
+    padding: 32px 0 24px 0;
+}
+
+.practicing span {
+    display: block;
+    margin: 32px 0;
+   font-style : italic;
+}
+
+.orientation {
+    padding: 16px 16px 0 0;
+    transform: translate(22px, 0);
+}
+
+.orientation h3 {
+    padding-top: 24px;
+}
+
+.small-img {
+    height: 200px;
+    padding: 16px;
+}
+
+.beret {
+    background-color:rgb(240, 240, 240);
+}
+
 
 @media only screen and (max-width: 800px) {
     .practicing {
         display: none
     }
+
     .orientation {
         padding:0;
     }
+
     .flex-container-info  {
         width: 460px;
     }
+
     .flex-container-csw {
         padding-top: 0;
-        justify-content: flex-start;
+        justify-content: center;
     }
+
      .flex-container-info {
     flex:wrap;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     }
+
     .mobile-img {
     padding: 16px 16px 16px 16px;
     max-width: 460px;
@@ -253,20 +268,19 @@ nav {
 
     .mobile-indent {
         padding-left: 16px;
+        padding-bottom: 0;
     }
 
     .beret {
         background-color: white;
         padding-top :48px;
+        padding-bottom: 0px;
     }
 
     .students { 
         padding-top: 48px;
     }
 
-}
-
-@media only screen and (max-width: 800px) {
     .small-img {
         display: none;
     }
@@ -278,10 +292,65 @@ nav {
     }
 }
 
-
-
-
 /*Start learning*/
+
+p .small-container {
+    color: rgb(150, 150, 150)
+}
+
+.start-learning {
+    text-align: center;
+    padding: 32px, 0;
+    background-color: rgb(240, 240, 240);
+}
+
+.outer-flex-container-cs {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.flex-container-six-csw {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap:wrap;
+    background-color:rgb(240, 240, 240);
+    max-width: 1600px;
+    padding: 0;
+}
+
+.small-container {
+    max-width: 426px;
+    padding: 0;
+
+}
+
+.small-container img {
+    display: block;
+    height: 218px;
+    width: 426px;
+}
+
+.text-indent {
+    padding: 0 0 0 16px;
+}
+
+.text-indent h3 {
+    padding: 16px, 0 0 0;
+    padding-bottom: 0;
+}
+
+.text-indent h4 {
+    padding: 8px 0;
+}
+
+.text-indent p {
+    padding-bottom: 24px;
+
+}
 
 /*Thesis exhibit*/
 
