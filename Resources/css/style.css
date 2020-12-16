@@ -155,7 +155,7 @@ nav {
 }
 .learn-flex-item {
     max-width: 432px;
-    padding: 0;
+    padding-left: 16px;
 }
 
 /*Learn something new everyday Media queries*/
@@ -187,12 +187,10 @@ nav {
     padding: 0;
     display: flex; 
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
+    width: 500px;
 }
 
-.flex-container-info  {
-    width: 415px;
-}
 
 .flex-container-info p {
     padding: 8px 0 8px 0;
@@ -204,7 +202,7 @@ nav {
 
 .practicing {
     padding: 32px 0 0 24px;
-    transform: translate(0px, 0);
+    transform: translate(40px, 0);
 }
 
 .practicing img, p {
@@ -224,11 +222,7 @@ nav {
 
 .orientation {
     padding: 16px 16px 0 0;
-    transform: translate(0px, 0);
-}
-
-.orientation h3 {
-    padding-top: 24px;
+    transform: translate(40px, 0);
 }
 
 .small-img {
@@ -250,10 +244,6 @@ nav {
         padding:0;
     }
 
-    .flex-container-info  {
-        width: 460px;
-    }
-
     .flex-container-csw {
         padding-top: 0;
         justify-content: center;
@@ -264,6 +254,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    width: 560px;
     }
 
     .mobile-img {
@@ -272,8 +263,11 @@ nav {
     }
 
     .mobile-indent {
-        padding-left: 16px;
-        padding-bottom: 0;
+        padding: 0 16px 0 16px;
+    }
+
+    .mobile-indent p .mobile-indent a {
+       padding: 0 0 0 16px;
     }
 
     .beret {
@@ -324,11 +318,11 @@ p .small-container {
     flex-wrap: wrap;
     max-width: 1500px;
     padding: 0;
-    transform: translate(15px, 0);
+    transform: translate(60px, 0);
 }
 
 .small-container {
-    max-width: 372px;
+    max-width: 398px;
     padding: 0;
     background-color: white;
     margin: 0 32px 32px 0;
@@ -336,8 +330,8 @@ p .small-container {
 
 .small-container img {
     display: block;
-    height: 190px;
-    width: 372px;
+    height: 203px;
+    width: 397px;
 }
 
 .text-indent {
@@ -376,6 +370,10 @@ p .small-container {
    padding: 16px 0 24px 16px;
 }
 
+.desktop-courses {
+    padding: 0;
+}
+
 /*Start Learning Media Queries*/
 
 @media only screen and (min-width: 550px) {
@@ -386,12 +384,69 @@ p .small-container {
 
 @media only screen and (max-width: 550px) {
     .desktop-courses {
-        display: none
+        display: none;
     }
+}
+
+/*Thesis exhibit*/
+
+.thesis-h2 {
+    text-align: center;
+    padding: 32px 0 32px 0;
+}
+
+.flex-container-thesis-csw {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0 0 32px 24px;
+    transform: translate(38px, 0);
+}
+
+video {
+    padding: 0 0 24px 0;
+}
+
+.video-container, .video-container h3, .thesis-content{
+    padding: 0;
+}
+
+ .video-container  p {
+    padding-top: 8px;
+}
+
+.flex-container-fisma-sc { 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    padding: 16px 0 16px 16px;
+}
+
+.flex-container-ny-sc { 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-container-fisma-sc img, .flex-container-ny-sc img  {
+    padding-right: 16px;
+    height: 160px;
+}
+
+.flex-container-ny-sc img {
+    padding-left: 16px;
 }
 
 
 
-/*Thesis exhibit*/
+
+
+
+
+/*Thesis exhibit mobile*/
+
+/*Thesis exhibit media queries*/
 
 /*footer*/
