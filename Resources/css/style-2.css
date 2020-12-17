@@ -14,19 +14,24 @@ font-family: 'Montserrat', sans-serif;
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    border: 1px  none red;
+    border: 1px  solid pink;
 }
 
 html {
     font-size: 14px;
 }
 
+body, .main-content {
+    padding:0;
+    margin :0;
+}
+
 /* Universal Styles */
+
 body {
     font-family: "Montserrat", Helvetica, sans-serif;
     font-size: 14px;
-    color: rgb(125, 125, 125);
+    color: rgb(75,75,75);
 }
 
 h1, h2, h3, h4 {
@@ -35,7 +40,7 @@ h1, h2, h3, h4 {
 }
 
 h1, h2, h3 {
-    color: rgb(75, 75, 75);
+    color: rgb(0, 0, 75);
 }
 
 h1 {
@@ -66,11 +71,42 @@ a {
 }
 
 a:hover {
-    color: navy;
+    color: rgb(0, 0, 75);
 }
 
 a:visited {
-    color: forestgreen;
+    color: rgb(0, 65, 75);
+}
+
+.flex-container-ccw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+
+}
+
+.flex-container-csw {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.flex-container-cs {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.flex-container-sc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
 }
 
 /*header*/
@@ -85,7 +121,7 @@ header {
 
 .logo img {
     height: 32px;
-    vertical-align: sub;
+    transform:translate(0, -3px);
 }
 
  .name  {
@@ -136,4 +172,144 @@ nav {
     height: 2rem;
 }
 
-/*Learn something new everyday*/
+/*Learn something new everyday
+2 flex-boxes 1.learn 2.study
+*/
+
+.learn-and-study {
+    background-color: rgb(230, 230, 230);
+}
+
+.study  {
+    padding: 32px 24px;
+    width: 739px
+}
+
+.learn {
+   width: 461px;
+   border-bottom: 1px solid rgb(0, 165, 175);
+   border-top: 1px solid rgb(0, 165, 175);
+   margin-bottom: 24px;
+}
+
+.learn h1 {
+    padding: 32px 0;
+}
+
+.start-here-container {
+    padding: 32px 0 48px 0;
+}
+
+.learn a {
+    padding: 8px 70px;
+    text-align: center;
+    color: white;
+    background-color:rgb(0, 65, 75);
+    font-size: 1.3rem;
+}
+
+/*It doesn't hurt to keep practicing
+2 flex-boxes 1.practicing 2.orientation
+*/
+
+.practicing {
+    padding: 32px 24px 32px 24px;
+    width: 739px
+}
+
+.orientation {
+    width: 461px;
+    padding: 16px 0 32px 0;
+}
+
+.practicing img {
+    width:739px;
+}
+
+.practicing h2 {
+    padding: 32px 0 24px 0;
+}
+
+.practicing span {
+    font-family: Belleza;
+    font-style : italic;
+    font-size: 1.1rem;
+    color:rgb(0, 0, 75);
+    display: block;
+    padding: 24px 0 32px 0;
+    border-bottom: 1px solid rgb(0, 165, 175)
+}
+
+.mobile-indent p {
+    padding: 16px 0;
+}
+
+.mobile-indent a {
+    color:rgb(0, 165, 175)
+}
+
+.small-img {
+    height: 150px;
+    padding: 16px;
+}
+
+.beret {
+    background-color:rgb(240, 240, 240);
+}
+
+
+@media only screen and (max-width: 800px) {
+    .practicing {
+        display: none
+    }
+
+    .orientation {
+        padding:0;
+    }
+
+    .flex-container-csw {
+        padding-top: 0;
+        justify-content: center;
+    }
+
+     .flex-container-info {
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 560px;
+    }
+
+    .mobile-img {
+    padding: 16px 16px 16px 16px;
+    max-width: 460px;
+    }
+
+    .mobile-indent {
+        padding: 0 16px 0 16px;
+    }
+
+    .mobile-indent p .mobile-indent a {
+       padding: 0 0 0 16px;
+    }
+
+    .beret {
+        background-color: white;
+        padding-top :48px;
+        padding-bottom: 0px;
+    }
+
+    .students { 
+        padding-top: 48px;
+    }
+
+    .small-img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .mobile-img {
+        display: none;
+    }
+} 
