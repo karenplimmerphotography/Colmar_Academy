@@ -5,8 +5,6 @@ fonts in use
 font-family: "Belleza", sans-serif;
 font-family: "Lora", serif;
 font-family: 'Montserrat', sans-serif;
-
-
 */
 
 /* Reset default browser */
@@ -14,7 +12,7 @@ font-family: 'Montserrat', sans-serif;
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid pink;
+    border: 1px none pink;
 }
 
 html {
@@ -62,7 +60,7 @@ h4 {
 }
 
 p {
-    line-spacing: 1.3;
+    line-height: 1.3;
 }
 
 a {
@@ -76,6 +74,11 @@ a:hover {
 
 a:visited {
     color: rgb(0, 65, 75);
+}
+
+nav li {
+    list-style: none;
+    display: inline;
 }
 
 .flex-container-ccw {
@@ -112,7 +115,7 @@ a:visited {
 
 header {
     height: 64px;
-    padding: 0 24px;
+    padding: 0 0 0 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -138,9 +141,11 @@ header {
 }
 
 nav li {
-    display: inline;
-    list-style: none;
     padding-left: 16px;
+}
+
+li a {
+    color:rgb(125, 125, 125);
 }
 
 /*Header Media Queries*/
@@ -160,7 +165,7 @@ nav li {
 /*Header Mobile*/
 
 nav {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
@@ -173,6 +178,10 @@ nav {
 
 /*Learn something new everyday
 2 flex-boxes 1.learn 2.study
+The image is  directly in the flex-container.
+The 3 text items are in a div in the flex-container.
+The link required it's own div. Maybe I could have selected display:block
+ and used margin for outer padding.
 */
 
 .learn-and-study {
@@ -209,14 +218,15 @@ nav {
 
 /*It doesn't hurt to keep practicing
 2 flex-boxes 1.practicing 2.orientation
-Each of the 3 blocks in orientation also act as flex-boxes because for desktop 
+Each of the 3 blocks in orientation also are flex-boxes because for desktop 
 I wanted the image and text to display inline but for mobile as a block. 
+Perhaps I could have chosen display:inline and for mobile display:block.
 I also wanted the desktop text centred vertically. Perhaps if I specified height
-vertical-align middle might work??? A. No, only if set as a table-cell.
+vertical-align middle: might work? A. No, only if set as a table-cell.
 */
 
 .practicing {
-    padding: 32px 24px 32px 24px;
+    padding: 32px 24px 0 24px;
     width: 739px
 }
 
@@ -234,13 +244,12 @@ vertical-align middle might work??? A. No, only if set as a table-cell.
 }
 
 .practicing span {
+    display: block;
     font-family: Belleza;
     font-style : italic;
     font-size: 1.1rem;
     color:rgb(0, 0, 75);
-    display: block;
     padding: 24px 0 32px 0;
-    border-bottom: 1px solid rgb(0, 165, 175)
 }
 
 .mobile-indent p {
@@ -304,26 +313,29 @@ vertical-align middle might work??? A. No, only if set as a table-cell.
     }
 } 
 
-/*Start learning*/
+/*Start learning
+One flex container (container-of-six) containing 6 flex-items. 
+Six smaller boxes contained an image and a text box as block elements.
+( a text box was chosen as all lines of text but not the image required indentation) 
+The heading did not need to be contained in a div for styling but 
+height/line-height was used for vertical alignment.
+*/
 
-.desktop-courses {
+.desktop-courses {    
     padding-left: 32px;
     background-color: rgb(230, 230, 230);
 }
 
 .start-learning-heading {
     text-align: center;
-    height: 60px;
-    line-height: 60px;
-    background-color: rgb(230, 230, 230);
-}
-
-.outer-courses-box {
+    height: 92px;
+    line-height: 92px;
     background-color: rgb(230, 230, 230);
 }
 
 .container-of-six {
     max-width: 1260px;
+    background-color: rgb(230, 230, 230);
 }
 
 .small-container {
@@ -362,7 +374,10 @@ vertical-align middle might work??? A. No, only if set as a table-cell.
     padding-bottom: 24px;
 }
 
-/*Start Learning Media Queries*/
+/*Start Learning Media Queries
+No flex-containers on mobile. Able to vertiically align text in boxes 
+with padding and no horizontal centering required.
+*/
 
 @media only screen and (min-width: 550px) {
     .mobile-courses {
@@ -374,111 +389,119 @@ vertical-align middle might work??? A. No, only if set as a table-cell.
     .desktop-courses {
         display: none;
     }
-    .start-learning-mobile {
+
+   .start-learning-heading-mobile {
         text-align: center;
-        padding-bottom: 16px;
+        background-color:white;
+        padding-bottom: 24px;
     }
-    
+
     .shaded {
-       max-width: 460px;
-       margin-bottom: 8px;
-       background-color :rgb(230, 230, 230);
-       padding: 16px 0 24px 16px;
+        max-width: 460px;
+        background-color :rgb(230, 230, 230);
+        padding: 16px 0 24px 16px;
+        display: block;
+        margin: 0 auto 8px auto;
+   }
+
+   .shaded:last-child {
+        margin-bottom:56px;
    }
 
    .shaded a {
         color:rgb(0, 0, 75);
- }
+   }
 
- .shaded:last-child {
-     margin-bottom:56px;
- }
+   .shaded a:hover {
+       color:rgb(0, 205, 215);
+    }
+} 
+    
 
- .shaded a:hover {
-    color:rgb(0, 205, 215);
-}
+/*Thesis exhibit
+A flex-container .thesis contains 1 .video  and  2.thesis-content.
+The video box contains the video and 2 text blocks
+*/
 
-/*Thesis exhibit*/
-
-.thesis-h2 {
+.thesis-h2 { 
     text-align: center;
-    padding: 32px 0 32px 0;
+    height: 92px;
+    line-height: 92px;
+} 
+
+.thesis {
+    padding: 0 32px 48px 24px;
 }
 
-.flex-container-thesis-csw {
-    display: flex;
-    justify-content: center;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    padding: 0 0 32px 24px;
+.video {
+    padding-bottom: 16px;
 }
 
 video {
+    width: 691px;
     padding: 0 24px 24px 0;
 }
 
-.video-container, .video-container h3, .thesis-content{
-    padding: 0;
-}
-
- .video-container  p {
+ .video  p {
     padding-top: 8px;
     padding-bottom: 32px;
+    width: 691px;
 }
 
-.flex-container-fisma-sc { 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: rgb(240, 240, 240);
-    background-image: linear-gradient(to right, rgb(240, 240, 240), white);
-    padding: 16px 0 16px 16px;
+.fisma, .ny {
+    width: 500px;
 }
 
-.flex-container-ny-sc { 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.fisma { 
+    background-color: rgb(230, 230, 230);
 }
 
-.flex-container-fisma-sc img, .flex-container-ny-sc img  {
-    padding-right: 16px;
-    height: 160px;
+.fisma img, .ny img  {
+    padding: 16px;
+    height: 150px;
 }
 
-.flex-container-ny-sc img {
-    padding-left: 16px;
-}
+/*Thesis exhibit media queries
+Centered video horizontally by displaying as block 
+and using margin: auto
+*/
 
-/*Thesis exhibit mobile*/
-
-.thesis-mobile-h2 {
-    padding-bottom: 16px;
-    text-align: center;
-}
-
-.flex-container-video-section-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-/*Thesis exhibit media queries*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
     .desktop-video {
         display: none;
     }
     .mobile-video {
         padding-left: 16px;
     }
+
+    video {
+        display: block;
+        width: 460px;
+        height: auto;
+        margin: 0 auto 32px auto;
+    }
+
+    .thesis-mobile-h2 {
+        padding: 16px 0 24px 0;
+        text-align: center;
+    }
 }
 
-@media only screen and (min-width: 800px) {
-    .mobile-video, .thesis-mobile-h2 {
+@media only screen and (min-width: 700px) {
+    .video-section-mobile {
         display: none;
     }
 }
 
 /*footer*/
+
+footer {
+    display: inline;
+    font-size: 0.9rem;
+    padding: 0 24px 64px 24px;
+}
+
+footer nav {
+    display: inline;
+    float: right;
+}
