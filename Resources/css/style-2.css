@@ -14,7 +14,7 @@ font-family: 'Montserrat', sans-serif;
 * {
     margin: 0;
     padding: 0;
-    border: 1px  solid pink;
+    border: 1px  none pink;
 }
 
 html {
@@ -223,7 +223,7 @@ nav {
 }
 
 .practicing img {
-    width:739px;
+    width: 739px;
 }
 
 .practicing h2 {
@@ -258,45 +258,37 @@ nav {
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 740px) {
     .practicing {
         display: none
     }
 
     .orientation {
-        padding:0;
+        padding: 0;
     }
 
-    .flex-container-csw {
-        padding-top: 0;
-        justify-content: center;
-    }
-
-     .flex-container-info {
-    flex-wrap:wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 560px;
+    .info {
+      padding: 0;
+      width: 460px;
+      flex: display;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
     }
 
     .mobile-img {
-    padding: 16px 16px 16px 16px;
-    max-width: 460px;
+      max-width: 460px;
+      padding : 16px 0;
     }
 
     .mobile-indent {
-        padding: 0 16px 0 16px;
-    }
-
-    .mobile-indent p .mobile-indent a {
-       padding: 0 0 0 16px;
+        padding: 0 16px;
     }
 
     .beret {
         background-color: white;
-        padding-top :48px;
-        padding-bottom: 0px;
+        padding-top: 48px;
+        padding-bottom: 64px;
     }
 
     .students { 
@@ -308,7 +300,7 @@ nav {
     }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 740px) {
     .mobile-img {
         display: none;
     }
