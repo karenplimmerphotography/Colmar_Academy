@@ -322,7 +322,6 @@ height/line-height was used for vertical alignment.
 */
 
 .desktop-courses {    
-    padding-left: 32px;
     background-color: rgb(230, 230, 230);
 }
 
@@ -334,7 +333,8 @@ height/line-height was used for vertical alignment.
 }
 
 .container-of-six {
-    max-width: 1260px;
+    max-width: 1300px;
+    margin :0 auto;
     background-color: rgb(230, 230, 230);
 }
 
